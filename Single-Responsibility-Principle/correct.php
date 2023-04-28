@@ -22,7 +22,7 @@ abstract class Validation
                 if ($rule == self::RULE_REQUIRED && empty($this->{$property})) {
                     throw new Exception("{$property} must not be empty", 400);
                 }
-                if ($rule == self::RULE_EMAIL && !filter_var($this->email, FILTER_VALIDATE_EMAIL)) {
+                if ($rule == self::RULE_EMAIL && !filter_var($this->{$property}, FILTER_VALIDATE_EMAIL)) {
                     throw new Exception("{$property} property is not valid email format", 400);
                 }
             }
@@ -39,8 +39,8 @@ class User extends Validation
 
     public function __construct(array $data)
     {
-        $this->name = $data["name"];
-        $this->email = $data["email"];
+        $this->name = $data["name"] ?? null;
+        $this->email = $data["email"] ?? null;
     }
 
     protected function rules() : array
