@@ -6,5 +6,5 @@
 
 ### Running
 
-```cd  folder```
-```php -S localhost:port correct.php```
+- ```cd  folder```
+- ```php -S localhost:port correct.php```
