@@ -1,4 +1,8 @@
 <?php
+/**
+ * https://www.php.net/manual/en/language.oop5.variance.php
+ * https://stackoverflow.com/questions/65494457/php-8-method-overriding-with-different-types-from-the-same-baseclass
+ */
 
 interface Animal
 {}
