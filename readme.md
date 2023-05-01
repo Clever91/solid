@@ -1,5 +1,5 @@
 # SOLID
-## this is for educational purposes
+## this is for educational purpose
 
 - Single Responsibility Principle
 - Open Closed Principle
